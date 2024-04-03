@@ -1,43 +1,38 @@
-# Bilgisayarlı Görme Kullanan Katılım Takip Sistemi
+# Computer Vision-Based Attendance Tracking System
 
-Bu proje, bilgisayarlı görme kullanarak katılım takibi yapmayı amaçlayan bir Python uygulamasıdır. Proje, yüz tanıma teknolojisi ve kullanıcı girişiyle çalışır. Projenin ana amacı, belirli bir sınıfta veya etkinlikte katılımcıların yoklamasını almak ve yoklama verilerini bir CSV dosyasına kaydetmektir.
+This project is a Python application aimed at tracking attendance using computer vision. The project utilizes face recognition technology and user authentication. The main objective of the project is to take attendance in a specific class or event and save the attendance data to a CSV file.
 
-## Özellikler
+## Features
 
-- Kullanıcı girişi: Proje, kullanıcı adı ve şifre girişiyle başlar. Kullanıcı adı ve şifre doğruysa, yoklama alım ekranına erişim sağlanır.
-- Yüz tanıma: Kamera üzerinden alınan görüntülerde yüz tanıma teknolojisi kullanılarak katılımcıların yüzleri tanınır. Tanınan katılımcılar yoklama listesine eklenir.
-- Yoklama alma: Tanınan katılımcıların adları, giriş saati ve tarihi bir CSV dosyasına kaydedilir.
-- Arayüz: Tkinter kütüphanesi kullanılarak basit bir kullanıcı arayüzü oluşturulmuştur. Arayüz, kullanıcıyı yönlendirmek ve işlem sırasında bilgi sağlamak için tasarlanmıştır.
+- User Authentication: The project starts with username and password input. If the username and password are correct, access to the attendance-taking screen is granted.
+- Face Recognition: Faces of participants are recognized using face recognition technology from images captured by the camera. Recognized participants are added to the attendance list.
+- Attendance Taking: Names of recognized participants along with their entry time and date are saved to a CSV file.
+- Interface: A simple user interface is created using the Tkinter library. The interface is designed to guide the user and provide information during the process.
 
-## Gereksinimler
+## Requirements
 
 - Python 3.x
-
 - OpenCV
-
 - NumPy
-
 - Face Recognition
-
 - Tkinter
-
 - Pillow
-  
 
-Gerekli kütüphaneleri yüklemek için aşağıdaki komutu kullanabilirsiniz:
+You can install the required libraries using the following command:
+
 ```
 pip install opencv-python numpy face_recognition pillow
 ```
 
-## Kullanım
+## Usage
 
-1. Projeyi çalıştırmak için main.py dosyasını çalıştırın.
-2. Kullanıcı adı ve şifre alanlarını doldurun ve "Giriş" butonuna tıklayın.
-3. Yoklama alım ekranında, kameranın önüne geçin ve yüzünüzün tanınmasını bekleyin.
-4. Yüz tanıma sonucunda adınız, ekranda görünecektir ve yoklama listesine kaydedilecektir.
-5. Yoklama alımını bitirmek için ESC tuşuna basın.
+1. Run the main.py file to start the project.
+2. Fill in the username and password fields and click the "Login" button.
+3. In the attendance-taking screen, stand in front of the camera and wait for your face to be recognized.
+4. Upon successful face recognition, your name will appear on the screen and will be added to the attendance list.
+5. Press the ESC key to finish taking attendance.
 
-## Notlar
+## Notes
 
-- Proje dosyalarını düzenlerken, kullanıcı adı ve şifre gibi hassas bilgilerinizi main.py dosyasında güvenli bir şekilde saklayın.
-- Proje dosyalarınızı düzenlerken, kameranın tanıma kalitesini artırmak için encodeListKnown değişkenindeki kişilerin fotoğraflarını güncelleyebilirsiniz.
+- When editing project files, securely store sensitive information such as usernames and passwords in the main.py file.
+- When editing project files, you can update the photos of individuals in the encodeListKnown variable to improve the recognition quality of the camera.
