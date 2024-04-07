@@ -1,6 +1,6 @@
 # Computer Vision-Based Attendance Tracking System
 
-The Python application project focuses on employing computer vision for attendance tracking, integrating face recognition technology with user authentication. Its primary goal is to automate attendance-taking for designated classes or events and store the attendance data into a CSV file.
+This project is a Python application aimed at tracking attendance using computer vision. The project utilizes face recognition technology and user authentication. The main objective of the project is to take attendance in a specific class or event and save the attendance data to a CSV file.
 
 ## Features
 
